@@ -56,4 +56,5 @@ general, files containing GeeAre artwork are available for redistribution under
 the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International 
 (CC BY-NC-ND 4.0) license. All other files are in the public domain.
 
-[!](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
+![CC BY-NC-ND 4.0](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
+![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)
