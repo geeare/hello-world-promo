@@ -46,3 +46,14 @@ are simply implemented using strings as iterators. After running each of these
 it will wait for 5 seconds before clearing the screen and proceeding to the next 
 phase. After the last phase, the screen will clear and it will wait for 20 
 seconds before exiting. 
+
+
+### Legal details
+
+Please see the included [LICENSE](https://github.com/geeare/hello-world-promo/blob/main/LICENSE)
+file for information about file availability, modifications, and licensing. In 
+general, files containing GeeAre artwork are available for redistribution under 
+the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International 
+(CC BY-NC-ND 4.0) license. All other files are in the public domain.
+
+[!](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
