@@ -4,6 +4,10 @@
 
 
 
+
+
+
+
         /*
                       GRHELLOWORLD   HELLOWORLDGR   GHELLOWORLDH  HELLOWOR
                    GRGR:#helloworld##,helloworl;R   G;grgrgrgrgg.;grgrgr'R
@@ -32,14 +36,12 @@
         */
 
         #include <stdio.h>
+        #include <stdlib.h>
         int main(int argc, char *argv[]) {
+            const char *command = "aplay init.flac";
+            system(command);
             printf("Hello World!");
-            const char *preview = ""
             return 0;
         }
         
         
-        
-        
-       
-       
