@@ -1,0 +1,98 @@
+#!/bin/env python3
+
+"""
+The author of this program has explicitly waived all interests to copyright
+pertaining to it. Additionally, copyright is waived for the following 
+supplemental files:
+
+ascii-cover-promo.c
+init.txt
+README
+
+The following files are Copyright 2023 by GeeAre, All Rights Reserved. 
+They are redistributable under the terms of the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International licence:
+
+ascii-cover-preview.c
+"""
+
+
+import subprocess, sys, threading, time
+
+# Blank the screen
+def clear_screen():
+    subprocess.run(['clear'])
+
+clear_screen()
+
+def play_file(audio):
+    #subprocess.run(['aplay', audio], capture_output=True)
+    pass
+
+with open('ascii-cover.c') as ascii_file:
+    file_list = ascii_file.readlines()
+
+with open('init.txt') as loading_file:
+    load_list = loading_file.readlines()
+
+file_str = ''.join(file_list)
+load_str = ''.join(load_list)
+
+playback = threading.Thread(target=play_file, args=('init.wav',))
+playback.start()
+
+# Loading
+for char in load_str:
+    time.sleep(0.01)
+    if char != '!':
+        sys.stdout.write(char)
+        sys.stdout.flush()
+
+# Album art
+for char in file_str:
+    if char != ' ':
+        time.sleep(0.005)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+
+sys.stdout.write('\n')
+sys.stdout.flush()
+
+time.sleep(20)
+
+# Program execution
+for char in "Hello World!\n\n":
+    time.sleep(0.1)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+
+# Wait for song to end
+time.sleep(5)
+playback.join()
+
+clear_screen()
+
+coming_soon = """
+
+
+
+
+
+New Album Coming Soon...
+
+
+
+
+
+"""
+
+for char in coming_soon:
+    time.sleep(0.1)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+
+time.sleep(5)
+
+clear_screen()
+
+time.sleep(20)
